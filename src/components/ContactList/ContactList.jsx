@@ -8,7 +8,7 @@ import { selectNameFilter } from "../../redux/filtersSlice";
 export default function ContactList() {
   const dispatch = useDispatch();
   const contacts = useSelector(selectContacts);
-  console.log("Contacts from Redux store:", contacts);
+  
   const filter = useSelector(selectNameFilter);
 
   const visibleContacts = contacts.filter((contact) =>
